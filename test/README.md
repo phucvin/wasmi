@@ -7,3 +7,19 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 time cargo run --release --bin wasmi_cli test/fib32.wasm --invoke fib 40
 
 9.0s
+
+cd ..
+
+git clone 
+
+cd tinywasm https://github.com/explodingcamera/tinywasm
+
+cd exampes/rust
+
+./build.sh
+
+cd ../../crates/cli
+
+cargo run --release run ../../examples/rust/out/fibonacci.wasm -f fibonacci_recursive -a 'i32:40'
+
+> take longer than 30s
