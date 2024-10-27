@@ -23,3 +23,15 @@ cd ../../crates/cli
 cargo run --release run ../../examples/rust/out/fibonacci.wasm -f fibonacci_recursive -a 'i32:40'
 
 > take longer than 30s
+
+cd ../../../../
+
+git clone https://github.com/rhysd/wain
+
+cd wain
+
+vim exampes/fib.wat -> change to call fib 40
+
+cargo run --release -- examples/fib.wat
+
+> take longer than 30s
